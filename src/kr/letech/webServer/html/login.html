@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="/resources/jquery-1.9.1.min.js"></script>
+</head>
+<body>
+<!-- 	<form id="loginFrm" action="/index.do" method="get"> -->
+<!-- 	<form id="loginFrm" action="/login.do" method="post"> -->
+	<form id="loginFrm" action="/index.do" method="post">
+		아이디 : <input type="text" name="userId"><br>
+		비밀번호 : <input type="password" name="userPw">
+		<input type="button" id="loginBtn" value="로그인">
+	</form>
+</body>
+<script>
+$(function() {
+	$('#loginBtn').on('click', function(){
+		$('#loginFrm').submit();
+	});
+});
+</script>
+</html>
